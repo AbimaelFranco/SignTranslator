@@ -55,74 +55,12 @@ hands = mp_hands.Hands(static_image_mode=True, min_detection_confidence=0.3)
 
 diccionario = {}
 
-diccionario[0] = 'hola'
-diccionario[1] = 'a'
-diccionario[2] = 'b'
-diccionario[3] = 'c'
-diccionario[4] = 'd'
-diccionario[5] = 'e'
-diccionario[6] = 'f'
-diccionario[7] = 'g'
-diccionario[8] = 'h'
-diccionario[9] = 'i'
-diccionario[10] = 'j'
-diccionario[11] = 'k'
-diccionario[12] = 'l'
-diccionario[13] = 'm'
-diccionario[14] = 'n'
-diccionario[15] = 'ñ'
-diccionario[16] = 'o'
-diccionario[17] = 'p'
-diccionario[18] = 'q'
-diccionario[19] = 'r'
-diccionario[20] = 's'
-diccionario[21] = 't'
-diccionario[22] = 'u'
-diccionario[23] = 'v'
-diccionario[24] = 'w'
-diccionario[25] = 'x'
-diccionario[26] = 'y'
-diccionario[27] = 'z'
-# PALABRAS
-diccionario[28] = 'yo'
-diccionario[29] = 'tu'
-diccionario[30] = 'el/ella'
-diccionario[31] = 'caminar'
-diccionario[32] = 'comer'
-diccionario[33] = 'dormir'
-diccionario[34] = 'tomar'
-diccionario[35] = 'agua'
-diccionario[36] = 'cafe'
-diccionario[37] = 'cerveza'
-diccionario[38] = 'gaseosa'
-diccionario[39] = 'bañar'
-diccionario[40] = 'atencion'
-diccionario[41] = 'aqui'
-diccionario[42] = 'alla'
-diccionario[43] = 'arriba'
-diccionario[44] = 'ayer'
-diccionario[45] = 'mañana'
-diccionario[46] = 'besar'
-diccionario[47] = 'desocupado'
-diccionario[48] = 'solo'
-diccionario[49] = 'ingeniero'
-diccionario[50] = 'nan'
-
-
-# labels_dict = { 0: 'Hola', 1: 'Yo', 
-#                 2: 'Tu', 3: 'Caminar', 
-#                 4: 'NAN'}
-
-# diccionario[0] = 'hola'
-# diccionario[1] = 'yo'
-# diccionario[2] = 'tú'
-# diccionario[3] = 'caminar'
-# diccionario[4] = 'a'
-# diccionario[5] = 'e'
-# diccionario[6] = 'i'
-# diccionario[7] = 'o'
-# diccionario[8] = 'u'
-# diccionario[9] = 'nan'
+diccionario[0] = 'a'
+diccionario[1] = 'e'
+diccionario[2] = 'i'
+diccionario[3] = 'i'
+diccionario[4] = 'i'
+diccionario[5] = 'nan'
 
 while True:
 
@@ -174,7 +112,7 @@ while True:
             try:
                 predicted_character = diccionario[int(prediction[0])]
             except:
-                predicted_character = diccionario[50]
+                predicted_character = diccionario[5]
 
         if predicted_character == current_letter:
             if start_time is None:

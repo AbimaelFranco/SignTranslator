@@ -5,7 +5,7 @@ DATA_DIR = './data' #Creación de carpeta para almacenar capturas
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
 
-number_of_classes = 50  #Asignacion del numero de señas a capturar
+number_of_classes = 5  #Asignacion del numero de señas a capturar
 dataset_size = 100  #Cantidad de fotografias a tomar para entrenar el modelo
 
 cap = cv2.VideoCapture(0)
