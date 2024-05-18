@@ -55,11 +55,12 @@ hands = mp_hands.Hands(static_image_mode=True, min_detection_confidence=0.3)
 
 diccionario = {}
 
+#Listado de señas a detectar
 diccionario[0] = 'a'
 diccionario[1] = 'e'
 diccionario[2] = 'i'
-diccionario[3] = 'i'
-diccionario[4] = 'i'
+diccionario[3] = 'o'
+diccionario[4] = 'u'
 diccionario[5] = 'nan'
 
 while True:
@@ -122,7 +123,7 @@ while True:
                 progress_bar_width = int((elapsed_time / tiempo_deteccion) * 100)  #Tiempo de deteccion de seña
                 longitud = int(progress_bar_width/100 * (x2-x1))
                 progress = "Progreso: " + str(progress_bar_width) + "%"
-                print(progress)
+                # print(progress)
                 progress_bar_width = min(progress_bar_width, 100)  # Limitar al 100%
                 
                 # print(str(x1 + longitud))
@@ -182,7 +183,7 @@ while True:
                 if elapsed_time >= 3:
                     break
 
-    cv2.imshow('frame', frame)
+    cv2.imshow('Sign Translator', frame)
     cv2.waitKey(1)
 
 
