@@ -35,7 +35,6 @@ Please note that this project is currently a prototype. While it effectively dem
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [![Python][Python.js]][Python-url]
 * [![OpenCV][OpenCV.js]][OpenCV-url]
 
@@ -46,9 +45,9 @@ This section will guide you through the setup and usage of the "Sign Translator"
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* Python 3.8.10
-* Git
+This is an list things you need to use Sign Translator.
+* [Python 3.8.10](https://www.python.org/downloads/)
+* [Git](https://git-scm.com/downloads)
 
 ### Installation
 
