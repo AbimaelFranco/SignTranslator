@@ -19,7 +19,7 @@
 
 [![Product Name Screen Shot][product-screenshot]]([https://example.com](https://github.com/AbimaelFranco/SignTranslator))
 
-This project aims to create a useful tool for individuals with verbal impairments who communicate through sign language. This tool facilitates communication with people who are unfamiliar with sign language. Leveraging the power of real-time image processing and computer vision, this prototype translates sign language into text and speech.
+This project aims to create a useful tool for individuals with speech and hearing impairments who communicate through sign language. This tool facilitates communication with people who are unfamiliar with sign language. Leveraging the power of real-time image processing and computer vision, this prototype translates sign language into text and speech.
 
 The system utilizes the device's camera to capture the user's hand movements in real-time. By employing MediaPipe and OpenCV, the captured image is processed to identify key reference points on the visible hand. These points are then compared against a pre-trained model that contains the desired signs. The system determines the closest matching sign from the model and displays the corresponding letter on the video feed. If the detected sign is held for a specified duration, the system saves the character and waits for the next input. Once no hand is detected, the system compiles the saved characters into a text file and generates an audio output of the translated message.
 
